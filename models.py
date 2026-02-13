@@ -7,4 +7,6 @@ class User(Base):
     name = Column(String, index=True)
     email = Column(String, index=True)
     password = Column(String)
-    
+    address = Column(String)
+    phone = Column(String)
+    is_prime = Column(Boolean, default=False)
